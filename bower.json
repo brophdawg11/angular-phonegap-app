@@ -1,0 +1,32 @@
+{
+  "name": "angular-phonegap-app",
+  "version": "0.0.4",
+  "authors": [
+    "Matt Brophy <matt@brophy.org>"
+  ],
+  "description": "Pseudo-directive to replace ngApp for Phonegap Angular apps",
+  "main": "src/angular-phonegap-app.js",
+  "moduleType": [
+    "globals"
+  ],
+  "keywords": [
+    "angular",
+    "phonegap",
+    "ngApp",
+    "ng-app",
+    "init"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/brophdawg11/angular-phonegap-app",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.3.9",
+    "angular-mocks": "~1.3.9"
+  }
+}
