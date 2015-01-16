@@ -1,6 +1,6 @@
 {
   "name": "angular-phonegap-app",
-  "version": "0.0.4",
+  "version": "0.1.0",
   "description": "Pseudo-directive to replace ngApp for Phonegap Angular apps",
   "main": "src/angular-phonegap-app.js",
   "directories": {

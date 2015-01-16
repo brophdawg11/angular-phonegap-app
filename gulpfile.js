@@ -52,12 +52,15 @@ gulp.task('jshint', function() {
 gulp.task('bump-version', function (cb) {
     var util = require('gulp-util'),
         bump = require('gulp-bump'),
+        util = require('gulp-util');
         opts = {};
 
   if (args.buildVersion != null) {
     opts.version = args.buildVersion;
     util.log('  Using specified buildVersion ' + opts.version);
   }
+
+  util.log('  Don\'t forget to tag the new build version and push the tags!');
 
   return gulp.src(['./package.json', './bower.json'])
              .pipe(bump(opts))
