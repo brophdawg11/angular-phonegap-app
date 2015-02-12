@@ -32,7 +32,14 @@ gulp.task('test:karma', function (done) {
 });
 
 gulp.task('test:protractor', function () {
-  // TODO...
+  var protractor = require("gulp-protractor").protractor;
+
+  return gulp.src(["./test/e2e-spec.js"])
+      .pipe(protractor({
+          configFile: "./protractor.conf.js",
+          args: ['--baseUrl', 'http://127.0.0.1:8000']
+      }))
+      .on('error', function (e) { throw e; });
 });
 
 gulp.task('minify', function () {
